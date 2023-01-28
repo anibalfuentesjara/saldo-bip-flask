@@ -1,0 +1,24 @@
+Instalar flask:
+pip install Flask
+
+Hello world:
+
+app.py:
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
+
+
+
+Ejecutar servidor local:
+
+flask run --host=0.0.0.0 --debugger
+
+el parámetro --host=0.0.0.0 nos indica que escuchemos los request de cualquier parte de nuestra red local.
+El parámetro --debugger nos indica que estamos en modo debug, y vamos a recargar la página si cambia el código o vamos a mostrar un debugger en el browser si falla algo.
+
