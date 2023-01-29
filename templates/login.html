@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<title>Login page</title>
+<body>
+    <form method="post">
+        <input type="text" id="username" name="username">
+        <input type="password" id="password" name="password">
+        <button type="submit">Log in</button>
+    </form>
+    {% if error %}
+        <h1>Error: {{ error }}, please try again</h1>
+    {% endif %}
+</body>

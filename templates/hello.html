@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<!--
+    Here in the template we have access to config, request, session and g objects.
+    We also have access to url_for() and get_flashed_messages()
+-->
+<title>Hello from flask!</title>
+{% if name %}
+    <h1>Hello {{ name }}</h1>
+{% else %}
+    <h1>Hello, world!</h1>
+{% endif %}
